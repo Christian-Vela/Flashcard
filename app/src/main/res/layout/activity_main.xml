@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:autoText="false"
+        android:background="@drawable/solid_color_shape"
+        android:clickable="true"
+        android:gravity="center"
+        android:tag="2"
+        android:text="Who was the 44th President?"
+        android:textIsSelectable="false"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="350dp"
+        android:text="Brackobama"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:tag="2"
+        android:text="Trump"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="450dp"
+        android:tag="3"
+        android:text="Lebron James"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <ImageButton
+        android:id="@+id/See"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="500dp"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        app:srcCompat="@drawable/eye_open" />
+
+    <ImageButton
+        android:id="@+id/nosee"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="500dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eye_closed" />
+
+    <ImageButton
+        android:id="@+id/addcard"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/plus" />
+
+
+</RelativeLayout>
